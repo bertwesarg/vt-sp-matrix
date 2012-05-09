@@ -1,0 +1,62 @@
+Description             ;   Vampirtrace ; ScoreP   
+
+Supported plattforms
+IBM BlueGene            ;   yes         ;
+Cray XT                 ;   yes         ;
+Linux IBM AIX           ;   yes         ;
+SGI                     ;   yes         ;
+Sun                     ;   yes         ;
+Mac OS X                ;   yes         ;
+NEC SX series           ;   yes         ;
+
+Source instrumentation
+
+Compiler
+GNU                     ;   yes         ;
+IBM                     ;   yes         ;
+Intel                   ;   yes         ;
+SUN                     ;   yes         ;
+PathScale               ;   yes         ;
+NEC SX                  ;   yes         ;
+OpenUH                  ;   yes         ;
+
+Manual
+functions/regions       ;   yes         ;
+user defined counter    ;   yes         ;
+user defined marker     ;   yes         ;
+user defined comm.      ;   yes         ;
+
+OpenMP                  ;   yes         ;
+
+Binary instrumentation  ;   yes         ;
+
+Runtime
+MPI                     ;   yes         ;
+MPI correctness check   ;   yes         ;
+Pthreads                ;   yes         ;
+Java                    ;   yes         ;
+NVIDIA CUDA             ;   yes         ;
+OpenCL                  ;   yes         ;
+3rd party libs          ;   yes         ;
+External counter        ;   yes         ;
+
+Operating System
+Resource Usage          ;   yes         ;
+Memory allocation       ;   yes         ;
+Fork/system/exec        ;   yes         ;
+
+
+Hardware
+
+Performance Counter
+PAPI                    ;   yes         ;
+Sun CPC                 ;   yes         ;
+NEC SX                  ;   yes         ;
+
+I/O                     ;   yes         ;
+CPU ID                  ;   yes         ;
+
+Management
+Filtering               ;   yes         ;
+Grouping                ;   yes         ;
+
