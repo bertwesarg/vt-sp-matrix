@@ -1,7 +1,7 @@
 Description             ;   Vampirtrace ; ScoreP   
 
 Supported plattforms
-IBM BlueGene            ;   yes         ;
+IBM BlueGene            ;   yes (L/P)   ;
 Cray XT                 ;   yes         ;
 Linux IBM AIX           ;   yes         ;
 SGI                     ;   yes         ;
@@ -26,7 +26,7 @@ user defined counter    ;   yes         ;
 user defined marker     ;   yes         ;
 user defined comm.      ;   yes         ;
 
-OpenMP                  ;   yes         ;
+OpenMP                  ;   yes (OPARI1);
 
 Binary instrumentation  ;   yes         ;
 
@@ -39,6 +39,7 @@ NVIDIA CUDA             ;   yes         ;
 OpenCL                  ;   yes         ;
 3rd party libs          ;   yes         ;
 External counter        ;   yes         ;
+ + async. counter       ;   yes         ;
 
 Operating System
 Resource Usage          ;   yes         ;
