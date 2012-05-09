@@ -24,7 +24,7 @@ PathScale               ;   yes         ; no
 PGI                     ;   yes         ; yes (tested version 10.1)
 NEC SX                  ;   yes         ; no
 OpenUH                  ;   yes         ; no (GNU compatible?)
-Cray CCE                ;   yes         ; 
+Cray CCE                ;   yes         ; no
 
 Manual
 
@@ -32,7 +32,7 @@ functions/regions       ;   yes         ; yes
 user defined counter    ;   yes         ; yes
 user defined marker     ;   yes         ; no
 user defined comm.      ;   yes         ; no
-user defined comments   ;   yes         ; 
+user defined comments   ;   yes         ; no
 
 OpenMP                  ;   yes (OPARI1); yes (OpenMP 3.0, OPARI2)
 
