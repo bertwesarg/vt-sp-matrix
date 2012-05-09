@@ -1,62 +1,92 @@
-Description             ;   Vampirtrace ; ScoreP   
+Description             ;   VampirTrace ; Score-P
 
-Supported plattforms
-IBM BlueGene            ;   yes         ;
-Cray XT                 ;   yes         ;
+Supported platforms
+
+IBM BlueGene            ;   yes         ; yes (L not tested)
+Cray XT                 ;   yes         ; no (maybe in 1.1)
 Linux IBM AIX           ;   yes         ;
-SGI                     ;   yes         ;
+IBM SP & BladeCenter    ;               ; yes
+SGI                     ;   yes         ; yes
 Sun                     ;   yes         ;
-Mac OS X                ;   yes         ;
-NEC SX series           ;   yes         ;
+Mac OS X                ;   yes         ; probably (no one tested it)
+NEC SX series           ;   yes         ; no (last known issue: compiler
+dies on our code)
+ARM                     ;               ; 1.1
+
 
 Source instrumentation
 
 Compiler
-GNU                     ;   yes         ;
-IBM                     ;   yes         ;
-Intel                   ;   yes         ;
-SUN                     ;   yes         ;
-PathScale               ;   yes         ;
-NEC SX                  ;   yes         ;
-OpenUH                  ;   yes         ;
+GNU                     ;   yes         ; yes
+IBM                     ;   yes         ; yes
+Intel                   ;   yes         ; yes (tested version >=10)
+SUN/Orcale              ;   yes         ; yes (tested version 12.2)
+PathScale               ;   yes         ; no
+PGI                     ;               ; yes (tested version 10.1)
+NEC SX                  ;   yes         ; no
+OpenUH                  ;   yes         ; no (GNU compatible?)
 
 Manual
-functions/regions       ;   yes         ;
-user defined counter    ;   yes         ;
-user defined marker     ;   yes         ;
-user defined comm.      ;   yes         ;
 
-OpenMP                  ;   yes         ;
+functions/regions       ;   yes         ; yes
+user defined counter    ;   yes         ; yes
+user defined marker     ;   yes         ; no
+user defined comm.      ;   yes         ; no
 
-Binary instrumentation  ;   yes         ;
+OpenMP                  ;   yes         ; yes (OpenMP 3.0, OPARI2)
+
+Binary instrumentation  ;   yes         ; yes (cobi)
+
+PDT                     ;   yes         ; yes
+
 
 Runtime
-MPI                     ;   yes         ;
-MPI correctness check   ;   yes         ;
-Pthreads                ;   yes         ;
-Java                    ;   yes         ;
-NVIDIA CUDA             ;   yes         ;
-OpenCL                  ;   yes         ;
-3rd party libs          ;   yes         ;
-External counter        ;   yes         ;
+
+MPI                     ;   yes         ; yes
+MPI correctness check   ;   yes         ; no
+MPI wait-time profiling ;               ; yes
+Pthreads                ;   yes         ; no
+Java                    ;   yes         ; no
+NVIDIA CUDA             ;   yes         ; 1.1
+OpenCL                  ;   yes         ; no
+3rd party libs          ;   yes         ; no
+# are these the counter plugins?
+External counter        ;   yes         ; no
 
 Operating System
-Resource Usage          ;   yes         ;
-Memory allocation       ;   yes         ;
-Fork/system/exec        ;   yes         ;
+
+Resource Usage          ;   yes         ; yes
+Memory allocation       ;   yes         ; no
+Fork/system/exec        ;   yes         ; no
 
 
 Hardware
 
 Performance Counter
-PAPI                    ;   yes         ;
-Sun CPC                 ;   yes         ;
-NEC SX                  ;   yes         ;
 
-I/O                     ;   yes         ;
-CPU ID                  ;   yes         ;
+PAPI                    ;   yes         ; yes
+Sun CPC                 ;   yes         ; no
+NEC SX                  ;   yes         ; no
+
+I/O                     ;   yes         ; no (in a branch, but no
+records in OTF2 yet)
+CPU ID                  ;   yes         ; no
 
 Management
-Filtering               ;   yes         ;
-Grouping                ;   yes         ;
 
+Filtering               ;   yes         ; yes
+Grouping                ;   yes         ; not needed, will probably
+handled directly by vampir
+Rewind                  ;   yes         ; 1.1
+Selective tracing       ;               ; yes
+
+
+
+Scalable unification    ;               ; yes
+Matched messages        ;  yes          ; no
+Periscope Online Access ;               ; yes
+
+
+Storage
+
+Aggregated event files  ; yes (IOFSL)   ; yes (SIONLIB)
