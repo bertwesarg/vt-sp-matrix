@@ -5,12 +5,12 @@ Supported platforms
 IBM BlueGene            ;   yes (L/P)   ; yes (L not tested)
 Cray XT                 ;   yes         ; no (maybe in 1.1)
 Linux IBM AIX           ;   yes         ;
-IBM SP & BladeCenter    ;               ; yes
+IBM SP & BladeCenter    ;   maybe (not tested) ; yes
 SGI                     ;   yes         ; yes
 Sun                     ;   yes         ;
 Mac OS X                ;   yes         ; probably (no one tested it)
 NEC SX series           ;   yes         ; no (last known issue: compiler dies on our code)
-ARM                     ;               ; 1.1
+ARM                     ;   no          ; 1.1
 
 Source instrumentation
 
@@ -76,13 +76,13 @@ Management
 Filtering               ;   yes         ; yes
 Grouping                ;   yes         ; not needed, will probably be handled directly by vampir
 Rewind                  ;   yes         ; 1.1
-Selective tracing       ;               ; yes
+Selective tracing       ;   yes (VT_ON/OFF) ; yes
 
 
 
-Scalable unification    ;               ; yes
+Scalable unification    ;  no           ; yes
 Matched messages        ;  yes          ; no
-Periscope Online Access ;               ; yes
+Periscope Online Access ;  no           ; yes
 
 
 Storage
